@@ -1,0 +1,58 @@
+/* Here's where I'll write CSS */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body{
+    background: hsl(214, 64%, 98%);
+    padding: 6% 8%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+
+    /* hides horizontal scrolling */
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.whiteLogo{
+    filter: grayscale(100%) contrast(0%) brightness(100);
+}
+
+.button{
+    display: inline-block;
+    background: hsl(322, 100%, 66%);
+    color: white;
+    padding: 8px 48px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px rgba(72, 64, 82, 0.35);
+    font-size: .8rem;
+}
+
+.whiteButton{
+    background: white;
+    color: hsl(265, 100%, 66%);
+}
+
+/* alignment */
+.right{
+    /* background-color: red; */
+    float: right;
+    /* overflow: auto; */
+}
+
+/* decorative stuff */
+.decorativeRectangle{
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(hsl(322, 100%, 66%), hsl(265, 100%, 66%));
+
+    border-radius: 80px;
+}
+
+footer{
+    background: hsl(192, 100%, 9%);
+}

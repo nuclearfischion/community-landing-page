@@ -1,6 +1,15 @@
 /* Here's where I'll write CSS */
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+/* box-size all the things to border-box!!! */
+html{
+    box-sizing: border-box;
+    margin: 0;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
 body{
     background: hsl(214, 64%, 98%);
     font-family: 'Poppins', sans-serif;
@@ -19,6 +28,10 @@ main, header, footer{
 a{
     text-decoration: none;
     color: black;
+}
+
+img{
+    max-width: 100%;
 }
 
 .whiteLogo{
@@ -47,9 +60,21 @@ a{
     /* overflow: auto; */
 }
 
+.centerText{
+    text-align: center;
+    margin: auto;
+}
 /* rows & columns */
-.row{
-    
+.row1{
+    max-width: 50%;
+    margin-bottom: 25rem;
+}
+
+.halfColumn{
+    display: inline-block;
+    width: 50%;
+    /* margin: 0 5%; */
+    /* float: left; */
 }
 
 /* decorative stuff */
@@ -62,8 +87,8 @@ a{
 .pinkRectangle{
     background: linear-gradient(hsl(322, 100%, 66%), hsl(265, 100%, 66%));
     height: 100%;
-    width: 100%;
-    transform: rotate(-10deg) translate(50%, 0%);
+    width: 125%;
+    transform: rotate(-40deg) translate(60%, 0%);
 }
 
 .whiteRectangle{
@@ -71,7 +96,7 @@ a{
     background: #fff;
     height: 60%;
     width: 80%;
-    transform: rotate(-10deg) translate(-5%, 80%);
+    transform: rotate(-10deg) translate(-5%, 60%);
 }
 
 footer{

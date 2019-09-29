@@ -7,6 +7,11 @@
     <title>Huddle Here!</title>
 
     <link rel="shortcut icon" href="images/favicon-32x32.png">
+    <!-- Font Awesome -->
+    <link href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet">
+    <link href="node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet">
+    <link href="node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,19 +25,21 @@
 
     <main>
         <!-- row 1 -->
-        <div class="row1 centerText">
-            <img src="images/illustration-mockups.svg" alt="">
-            <h2>Build The Community Your Fans Will Love</h2>
-            <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-            <a class = "button" href="#">Get Started For Free</a>
+        <div class="row centerText">
+            <div class="column1 centerColumn">
+                <img src="images/illustration-mockups.svg" alt="">
+                <h2>Build The Community Your Fans Will Love</h2>
+                <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+                <a class = "button" href="#">Get Started For Free</a>
+            </div>
         </div>
 
         <!-- row 2 -->
-        <div class="row2">
-            <div class= "halfColumn">
+        <div class="row">
+            <div class= "column2">
                 <img src="images/illustration-your-users.svg" alt="">
             </div>
-            <div class= "halfColumn">
+            <div class= "column2">
                 <h2>Flowing Conversations</h2>
                 <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
 
@@ -46,7 +53,7 @@
 
         <!-- row 3 -->
         <div class="row centerText">
-            <div class="card">
+            <div class="card centerColumn">
                 <h1>Try It Free</h1>
                 <p>Fully featured 30-day free trial - no credit card required</p>
                 <a class = "button" href="#">Get Started For Free</a>
@@ -54,8 +61,32 @@
         </div>
     </main>
 
-    <footer>
-        <a href="#"><img class = "whiteLogo" src="images/logo.svg" alt=""></a>
+    <footer class="row">
+        <div class="column3">
+            <a href="#"><img class = "whiteLogo" src="images/logo.svg" alt=""></a>
+            <p>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+            </p>
+            <small>© Copyright 2019 Huddle. All rights reserved.</small>
+        </div>
+        <div class="column3 flexDirectionColumn">
+            <a href="#">About Us</a>
+            <a href="#">What We Do</a>
+            <a href="#">FAQ</a>
+            <div class="columnBreak"></div>
+            <a href="#">Career</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="column3">
+            <h5>SUBSCRIBE</h5>
+            <small>To receive tips on how to grow your community, sign up to our weekly newsletter. We'll never send you spam or pass on your email address
+            </small>
+            <input type="text">
+            <a class="button" href="#">Subscribe</a>
+        </div>
     </footer>
 </body>
 </html>

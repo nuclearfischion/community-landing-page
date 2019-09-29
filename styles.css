@@ -2,20 +2,21 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 /* box-size all the things to border-box!!! */
+/* reset all margins to 0 */
 html{
     box-sizing: border-box;
     margin: 0;
 }
 *, *:before, *:after{
     box-sizing: inherit;
+    margin: 0;
 }
 
 body{
     background: hsl(214, 64%, 98%);
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-
-    margin: 0;
+    color: hsl(208, 11%, 55%);
 
     /* hides horizontal scrolling */
     overflow-x: hidden;
@@ -23,6 +24,13 @@ body{
 
 main, header, footer{
     padding: 3% 4%;
+}
+h1, h2, h3, h4, h5, h6{
+    color: black;
+}
+
+small{
+    font-size: .75rem;
 }
 
 a{
@@ -65,32 +73,66 @@ img{
     margin: auto;
 }
 /* rows & columns */
-.row1{
-    max-width: 50%;
-    margin-bottom: 25rem;
-}
-
-.row2{
+.row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 14rem;
 }
 
 .card{
     display: inline-block;
     background: white;
     max-width: 55%;
-    padding: 3% 4%;
+    padding: 8% 4%;
     box-shadow: 0em 2em 3em rgba(112, 89, 116, 0.15);
     border-radius: 4px;
 }
-
-.halfColumn{
-    display: inline-block;
-    width: 50%;
-    margin: 0 5%;
-    /* float: left; */
+.column1{
+    max-width: 50%;
 }
 
+.column2{
+    box-sizing: border-box;
+    display: inline-block;
+    flex: 1;
+    margin: 0 5%;
+    min-width: 300px;
+}
+
+.column3{
+    display: inline-block;
+    flex: 1;
+    min-width: 100px;
+    flex-wrap: wrap;
+    margin-right: 14%;
+    min-width: 200px;
+}
+
+.column3:last-child{
+    margin-right: 0;
+}
+
+.centerColumn{
+    margin: auto;
+}
+
+.flexDirectionColumn{
+    display: flex;
+    flex-direction: column;
+    color: green;
+}
+
+.columnBreak{
+    flex-basis: 100%;
+}
+
+/* social media icons */
+i{
+    font-size: 1.75em;
+    padding-right: 5%;
+}
 /* decorative stuff */
 .decorativeRectangle{
     z-index: -1;
@@ -113,6 +155,8 @@ img{
     transform: rotate(-10deg) translate(-5%, 60%);
 }
 
-footer{
+footer, footer a, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
     background: hsl(192, 100%, 9%);
+    color: white;
+    margin-bottom: 0 !important;
 }
